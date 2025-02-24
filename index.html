@@ -21,16 +21,11 @@
         .confirm-button { margin-top: 20px; padding: 10px 20px; font-size: 16px; border: none; background-color: #007BFF; color: white; border-radius: 5px; cursor: pointer; font-family: 'Vazirmatn', sans-serif; }
         .confirm-button:hover { background-color: #0056b3; }
         footer { margin-top: 20px; font-size: 14px; color: #bbb; }
-        .logo { max-width: 60px; margin-left: 10px; vertical-align: middle; }
-        .title-container { display: flex; align-items: center; justify-content: center; gap: 10px; }
         @media (max-width: 768px) { body { zoom: 0.8; } }
     </style>
 </head>
 <body>
-    <div class="title-container">
-        <img src="logo.png" alt="لوگو" class="logo">
-        <h2>حضور و غیاب دانش آموزان</h2>
-    </div>
+    <h2>حضور و غیاب دانش آموزان</h2>
     <div class="container" id="studentsList"></div>
     <button class="confirm-button" onclick="confirmAttendance()">تایید</button>
     <div class="result-container-wrapper">
