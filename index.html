@@ -9,22 +9,27 @@
         body { font-family: 'Vazirmatn', sans-serif; text-align: center; direction: rtl; background-color: #121212; color: #e0e0e0; }
         .container { max-width: 90%; margin: auto; background: #1e1e1e; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
         .student { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; padding: 10px; border: 1px solid #333; border-radius: 5px; background: #2a2a2a; }
-        .buttons { display: flex; gap: 10px; } /* دکمه‌ها کنار هم */
-        .buttons button { padding: 5px 15px; cursor: pointer; border: none; border-radius: 5px; font-size: 14px; transition: all 0.3s; }
+        .buttons { display: flex; gap: 10px; }
+        .buttons button { padding: 5px 15px; cursor: pointer; border: none; border-radius: 5px; font-size: 14px; transition: all 0.3s; font-family: 'Vazirmatn', sans-serif; }
         .present { background-color: #4CAF50; color: white; opacity: 0.5; }
         .absent { background-color: #F44336; color: white; opacity: 0.5; }
         .buttons button.selected { opacity: 1; }
         .buttons button:hover { opacity: 0.8; }
         .result-container-wrapper { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; }
         .result-container { width: 45%; padding: 15px; background: #1e1e1e; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
-        .confirm-button { margin-top: 20px; padding: 10px 20px; font-size: 16px; border: none; background-color: #007BFF; color: white; border-radius: 5px; cursor: pointer; }
+        .confirm-button { margin-top: 20px; padding: 10px 20px; font-size: 16px; border: none; background-color: #007BFF; color: white; border-radius: 5px; cursor: pointer; font-family: 'Vazirmatn', sans-serif; }
         .confirm-button:hover { background-color: #0056b3; }
         footer { margin-top: 20px; font-size: 14px; color: #bbb; }
+        .logo { max-width: 60px; margin-left: 10px; vertical-align: middle; }
+        .title-container { display: flex; align-items: center; justify-content: center; gap: 10px; }
         @media (max-width: 768px) { body { zoom: 0.8; } }
     </style>
 </head>
 <body>
-    <h2>حضور و غیاب دانش آموزان کلاس هفتم یک مدرسه شاهد 11</h2>
+    <div class="title-container">
+        <img src="logo.png" alt="لوگو" class="logo">
+        <h2>حضور و غیاب دانش آموزان کلاس هفتم یک مدرسه شاهد 11</h2>
+    </div>
     <div class="container" id="studentsList"></div>
     <button class="confirm-button" onclick="confirmAttendance()">تایید</button>
     <div class="result-container-wrapper">
